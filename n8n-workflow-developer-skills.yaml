@@ -1,0 +1,15 @@
+# Claude Skills Configuration for N8N Workflow Development
+
+skills:
+  - name: Webhook
+    type: trigger
+    properties:
+      httpMethod: POST
+      url: /webhook
+
+  - name: Function
+    type: action
+    properties:
+      functionCode: |
+        // Custom function to process data
+        return items;
